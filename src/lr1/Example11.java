@@ -11,7 +11,7 @@ public class Example11 {
         int year = in.nextInt();
         java.time.LocalDateTime currentDateTime = java.time.LocalDateTime.now();
         int age = currentDateTime.getYear() - year;
-        System.out.println("Your name is "+ name + "and your age is: " + age);
+        System.out.println("Your name is "+ name + " and your age is: " + age);
         in.close();
     }
 }

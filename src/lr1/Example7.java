@@ -9,7 +9,7 @@ public class Example7 {
         String name = in.nextLine();
         System.out.println("Input age: ");
         int age = in.nextInt();
-        System.out.println("Your name is " + name + "And your age is " + age);
+        System.out.println("Your name is " + name + " and your age is " + age);
         in.close();
     }
 }
