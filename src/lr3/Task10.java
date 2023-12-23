@@ -17,7 +17,7 @@ public static void main(String[] args) {
             System.out.print(nums[i]+" ");
         }
         Arrays.sort(nums, Collections.<Integer>reverseOrder());
-        System.out.println("Отсортированный в порядке убывания массив: ");
+        System.out.println("\nОтсортированный в порядке убывания массив: ");
         for (int i : nums) {
             System.out.print(i+" ");
         }

@@ -7,6 +7,7 @@ public class Task2 {
         Scanner in = new Scanner(System.in, "Cp866");
         System.out.println("Введите название дня недели:");
         String dayName = in.nextLine().trim().toLowerCase();
+        System.out.println("Номер дня недели: ");
         System.out.println("Оператор Switch: "+WithSwitch(dayName));
         System.out.println("Условные операторы: "+WithIfElse(dayName));
         in.close();

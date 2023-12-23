@@ -12,6 +12,7 @@ public class Task3 {
         if (nums.length>1){
             nums[0]=1;
             nums[1]=1;
+            System.out.println("Последовательность Фибоначчи: ");
             System.out.println("For: ");
             for (int i : WithFor(nums)) {
                 System.out.print(i + " ");
