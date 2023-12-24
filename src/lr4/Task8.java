@@ -26,6 +26,7 @@ public class Task8 {
                 System.out.println("Введите корректный ответ");
                 break;
         }
+        in.close();
     }
 }
     public static String getEncryptString(String encryptString, int shift) {
