@@ -8,7 +8,7 @@ public class t1293 {
         int countPanels = in.nextInt();
         int height = in.nextInt();
         int width = in.nextInt();
-        int coloredS = height*width*2*countPanels;
+        int coloredS = height * width * 2 * countPanels;
         System.out.println(coloredS);
         in.close();
     }
