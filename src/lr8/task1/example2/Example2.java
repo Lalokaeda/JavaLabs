@@ -13,7 +13,6 @@ public class Example2 {
     public static void main(String[] args) throws IOException{
         
         try{
-            //TODO поменять патч
             InputStream inFile = new FileInputStream("D:/JavaProj/JavaApp/src/lr8/task1/example2/text.txt");
             FileReader.readAllByByte(inFile);
             System.out.print("\n\n\n");

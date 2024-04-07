@@ -1,9 +1,7 @@
 package lr8.task2;
 
-import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Scanner;
@@ -34,7 +32,6 @@ public class CreateFile {
             f1.createNewFile();
             setPath(f1.getAbsolutePath());
             System.out.println("Полный путь файла: " + f1.getAbsolutePath());
-           // System.out.print("Введите количество строк для записи в файл => ");
             int n = strNum;
             DataOutputStream dOut = new DataOutputStream(new FileOutputStream(f1));
             sc.nextLine();
@@ -45,10 +42,7 @@ public class CreateFile {
             }
             dOut.flush();
             dOut.close();
-          //  DataInputStream dIn = new DataInputStream(new FileInputStream(f1));
-           // while () {
-           //     System.out.println(dIn.readUTF());
-           // }
+
          } catch (Exception e) {
             System.out.println("" + e);
          }
