@@ -24,7 +24,7 @@ public class CreateFile {
         CreateFile._fPath = _fPath;
     }
     public static void Create(int strNum) throws IOException{
-        Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in, "cp866");
         System.out.print("Введите имя файла => ");
          setFname(sc.nextLine());
          try {

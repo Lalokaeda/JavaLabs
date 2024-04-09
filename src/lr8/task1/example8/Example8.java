@@ -13,7 +13,7 @@ public class Example8 {
     public static void main(String[] args) {
         try {
             InputStream inFile = new FileInputStream("D:\\JavaProj\\JavaApp\\src\\lr8\\task1\\example6\\MyFile1.txt");
-            Reader rFile = new InputStreamReader(inFile, "cp1251");
+            Reader rFile = new InputStreamReader(inFile, "utf8");
             InConvertInText.readAllByByte(rFile);
             System.out.print("\n\n\n");
             inFile.close();
