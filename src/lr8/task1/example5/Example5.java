@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 public class Example5 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in, "cp866");
         System.out.print("Введите имя файла => ");
         String fname = sc.nextLine();
         try {
@@ -27,12 +27,13 @@ public class Example5 {
             }
             dOut.flush();
             dOut.close();
+            sc.close();
             DataInputStream dIn = new DataInputStream(new FileInputStream(f1));
             while (true) {
                 System.out.println(dIn.readUTF());
             }
         } catch (Exception e) {
-            System.out.println("" + e);
+            System.out.println("");
         }
     }
 }
