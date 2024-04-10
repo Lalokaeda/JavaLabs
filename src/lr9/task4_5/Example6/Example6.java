@@ -1,4 +1,4 @@
-package lr9.task4.Example6;
+package lr9.task4_5.Example6;
 
 public class Example6 {
     public static void main(String[] args) {

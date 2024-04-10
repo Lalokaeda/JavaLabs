@@ -11,23 +11,19 @@ public class InputOutputArray {
     public void setArray(int[] array) {
         this.array = array;
     }
-    Scanner in = new Scanner(System.in);
-    public int[] Input(int n) {
-        array[n]=in.nextInt();
-        if(array.length>n){
-            return Input(n+1);
-        } else{
-            in.close();
-            return array;
+    
+    public static void Input(int[] arr, int index, Scanner in) {
+        if (index < arr.length) {
+            System.out.print("Введите элемент массива №" + index + ": ");
+            arr[index] = in.nextInt();
+            Input(arr, index + 1, in);
         }
     }
 
-    public int[] Output(int n) {
-        System.out.println(array[n]+" ");
-        if(array.length>n){
-            return Output(n+1);
-        } else{
-            return array;
+    public static void Output(int[] arr,int index) {
+        if (index < arr.length) {
+            System.out.print(arr[index] + " ");
+            Output(arr, index + 1);
         }
     }
 
