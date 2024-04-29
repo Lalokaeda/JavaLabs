@@ -16,6 +16,7 @@ public class Example6 {
             System.out.print(" "+ref.value);
             ref = ref.next;
         }
+        System.out.println("\n");
 
         //второй вариант
         Node head = null;
@@ -25,13 +26,26 @@ public class Example6 {
         ref = head;
         while(ref !=null){
             System.out.print(" "+ref.value);
+            ref = ref.next;
         }
 
-        Node newTail=new Node(123, null);
-        ref=head;
-        while (ref.next!=null) {
-            ref=ref.next;
+        head = null;
+        Node tail= null;
+        for (int i = 0; i < 10; i++) {
+            Node newNode = new Node(i, null);
+            if (head == null) {
+                head = newNode;
+                tail = newNode;
+            } else {
+                tail.next =newNode;
+                tail = newNode;
+            }
         }
-        ref.next=newTail;
+        System.out.println("\n");
+        ref=head;
+        while (ref!=null){
+            System.out.print(" "+ref.value);
+            ref=ref.next;
+        } 
     }
 }

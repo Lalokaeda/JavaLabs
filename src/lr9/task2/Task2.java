@@ -8,5 +8,6 @@ public class Task2 {
         System.out.println("Введите десятичное число:");
         int num = in.nextInt();
         System.out.println(num+" в двоичной системе: "+Converter.ConvertTentoTwo(num));
+        in.close();
     }
 }
