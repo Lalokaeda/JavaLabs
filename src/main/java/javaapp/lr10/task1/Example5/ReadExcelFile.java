@@ -8,7 +8,7 @@ import org.apache.poi.xssf.usermodel.*;
 
 public class ReadExcelFile {
 public static void main(String[] args) throws IOException {
-    String filePath = "Example5.xlsx";
+    String filePath = "src\\main\\java\\javaapp\\lr10\\task1\\Example5\\Example5.xlsx";
     FileInputStream inputStream = new FileInputStream(filePath);
 
     XSSFWorkbook workbook = new XSSFWorkbook(inputStream);

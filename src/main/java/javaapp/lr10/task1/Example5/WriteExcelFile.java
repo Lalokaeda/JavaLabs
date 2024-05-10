@@ -19,14 +19,14 @@ public class WriteExcelFile {
         headerRow.createCell(2).setCellValue("Стоимость");
 
         Row dataRow1 = sheet.createRow(1);
-        dataRow1.getCell(0).setCellValue("Книга");
-        dataRow1.getCell(1).setCellValue("Жанр: фантастика, Автор: Иванов И. И.");
-        dataRow1.getCell(2).setCellValue(500.0);
+        dataRow1.createCell(0).setCellValue("Книга");
+        dataRow1.createCell(1).setCellValue("Жанр: фантастика, Автор: Иванов И. И.");
+        dataRow1.createCell(2).setCellValue(500.0);
 
         Row dataRow2 = sheet.createRow(2);
-        dataRow2.getCell(0).setCellValue("Компьютер");
-        dataRow2.getCell(1).setCellValue("Процессор: Intel Core i5, Оперативная память: 16ГБ....");
-        dataRow2.getCell(2).setCellValue(25000.0);
+        dataRow2.createCell(0).setCellValue("Компьютер");
+        dataRow2.createCell(1).setCellValue("Процессор: Intel Core i5, Оперативная память: 16ГБ....");
+        dataRow2.createCell(2).setCellValue(25000.0);
 
         String filePath = "src\\main\\java\\javaapp\\lr10\\task1\\Example5\\Example5.xlsx";
         try {
